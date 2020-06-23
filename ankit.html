@@ -1,0 +1,15 @@
+{% extends "layout.html" %} {% block title %} Result {% endblock %} {% block body %}
+Result {{ result }}
+{% for acuracy in accuracy %}
+Accuracy for C= {{ acuracy[0] }} : {{ acuracy[1] }}
+
+{% endfor %}
+Positive
+{% for temp in positive %}
+On Youtube for {{ temp[0] }} People have Positive attitude {{ temp[1] }}.
+{% endfor %}
+Negative
+{% for temp in negative %}
+On Youtube for {{ temp[0] }} People have Positive attitude {{ temp[1] }}.
+{% endfor %}
+{% endblock %}
